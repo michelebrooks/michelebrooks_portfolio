@@ -971,6 +971,11 @@ input[type="text"] {
   margin: 0;
   padding: 0;
 }
+.fh5co-social-icons-2 {
+  margin: 0;
+  padding: 0;
+
+}
 .fh5co-social-icons li {
   margin: 0;
   padding: 0;
@@ -982,12 +987,12 @@ input[type="text"] {
 }
 .fh5co-social-icons-2 li {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   list-style: none;
   display: -moz-inline-stack;
   display: inline-block;
   zoom:1.5;
-  *display: inline;
+  display: inline;
 }
 .isotope {
   display: inline-block;
