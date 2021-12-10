@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin-bottom: 20px;
@@ -976,8 +976,17 @@ input[type="text"] {
   padding: 0;
   list-style: none;
   display: -moz-inline-stack;
+  display: block;
+  zoom:1.5;
+  *display: inline;
+}
+.fh5co-social-icons-2 li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
+  zoom:1.5;
   *display: inline;
 }
 .isotope {
