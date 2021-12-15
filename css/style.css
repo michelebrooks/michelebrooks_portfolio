@@ -474,8 +474,10 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #fafafa;
 }
 
+
 #fh5co-about,
 #fh5co-services,
+#fh5co-certifications,
 #fh5co-contact,
 #fh5co-work,
 #fh5co-blog,
@@ -486,14 +488,23 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 6em 3em;
   clear: both;
 }
+
 @media screen and (max-width: 768px) {
-  #fh5co-about,
+  #fh5co-about{
+    padding: 3em 1em;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
   #fh5co-services,
   #fh5co-contact,
   #fh5co-work,
   #fh5co-blog,
   #fh5co-counter,
   #fh5co-resume,
+  #fh5co-certifications,
   #fh5co-skills,
   #fh5co-footer {
     padding: 3em 1em;
@@ -1012,7 +1023,7 @@ input[type="text"] {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
@@ -1535,11 +1546,11 @@ input[type="text"] {
 /* Timeline */
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 0px 0 20px;
   position: relative;
 }
 .timeline:before {
-  top: 20px;
+  top: 0px;
   bottom: 0;
   position: absolute;
   content: " ";
@@ -1613,6 +1624,23 @@ input[type="text"] {
     width: 85% !important;
   }
 }
+@media (min-width: 481px) {
+  .sliderBG {
+    background-image: url(/images/img-cover-1.png);
+  
+  }
+}
+@media (max-width: 480px) { 
+  .sliderBG {
+    background-image: url(/images/mob-img-cover-1.png);
+    background-size: 100%!important; 
+    background-position: unset!important;
+    
+  
+  }
+}
+
+
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-panel {
     width: 75% !important;
@@ -1624,6 +1652,23 @@ input[type="text"] {
     top: 31px;
   }
 }
+
+.image-cropper {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
 .timeline > li > .timeline-badge {
   color: #fff;
   width: 44px;
@@ -1648,6 +1693,7 @@ input[type="text"] {
     margin-left: -10px !important;
   }
 }
+
 @media screen and (max-width: 992px) {
   .timeline > li > .timeline-badge {
     margin-left: -10px !important;
