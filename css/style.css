@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   text-transform: lowercase;
   font-weight: 500;
-  font-family: "kollektif", sans-serif;
+  font-family: "kollektif", Kollektif, sans-serif;
 }
 .fh5co-nav #fh5co-logo a span {
   color: #00b7ff;
@@ -1042,7 +1042,7 @@ input[type="text"] {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: 500;
-  font-family: "kollektif", sans-serif;
+  font-family: "kollektif", Kollektif, sans-serif;
   letter-spacing: 1px;
   text-transform: lowercase;
   color: #000;
