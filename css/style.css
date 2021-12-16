@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: 'kollektif';
-  src: url('fonts/kollektif/kollektif-webfont.woff2') format('woff2'),
-       url('fonts/kollektif/kollektif-webfont.woff') format('woff');
+  src: url('/fonts/kollektif/kollektif-webfont.woff2') format('woff2'),
+       url('/fonts/kollektif/kollektif-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
