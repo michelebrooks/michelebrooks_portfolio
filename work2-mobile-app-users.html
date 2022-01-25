@@ -90,7 +90,7 @@
 		<aside id="fh5co-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/work5-bg.png);">
+			   	<li style="background-image: url(images/work-header2-mob.png);">
 			   		<div class="overlay-gradient"></div>
 		   			<div class="row">
 			   		</div>
@@ -101,40 +101,44 @@
 		<div id="fh5co-work">
 			<div class="row">
 				<div class="col-md-8">
-					<a href="images/work5_sales1.png" class="image-popup img-portfolio-detail">
-						<img src="images/work5_sales1.png" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
+					<a href="images/work2_mob1.png" class="image-popup img-portfolio-detail">
+						<img src="images/work2_mob1.png" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
 					</a>
-					<a href="images/work5_sales2.png" class="image-popup img-portfolio-detail">
-						<img src="images/work5_sales2.png" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
+					<a href="images/work2_mob2.png" class="image-popup img-portfolio-detail">
+						<img src="images/work2_mob2.png" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
 					</a>
-					<a href="images/work5_sales3.png" class="image-popup img-portfolio-detail">
-						<img src="images/work5_sales3.png" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
+					<a href="images/work2_mob3.png" class="image-popup img-portfolio-detail">
+						<img src="images/work2_mob3.png" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
+					</a>
+                    <a href="images/work2_mob4.png" class="image-popup img-portfolio-detail">
+						<img src="images/work2_mob4.png" alt="Free HTML5 Template by FreeHTML5.co" class="img-responsive">
 					</a>
 				</div>
 				<div class="col-md-4 fh5co-project-detail">
-					<h3 class="fh5co-project-title">Sales Report</h3>
-					<span class="fh5co-project-sub">Automated daily report on sales figures at individual, team and company level</span>
+					<h3 class="fh5co-project-title">Mobile App Users</h3>
+					<span class="fh5co-project-sub">Tracking mobile app users through a Tableau dashboard</span>
                     <div class="fh5co-project-service">
 					    <h3>Overview</h3>
-                        <p>Automated reports with row-level security delivered daily via email to track company sales 
-                            by consultant and team. Built in SSRS, these reports track a a sales consultant’s performance 
-                            each month alongside their overall team performance. In addition to an SSRS report, I built 
-                            a custom SSIS package to generate each report daily and email it to the correct consultant 
-                            and their manager. This secure delivery method ensured that consultants could not access 
-                            other team members reports, but were able to track their individual performance and 
-                            monitor their monthly commissions. These reports were also used in quarterly performance 
-                            reviews for the sales teams.
-                        </p>
+                        <p>This analysis starts by cleaning, partitioning and classifying the user activity data derived from the text 
+                            file logs the music application generates. The data pipeline to pull raw log data is managed using Python 
+                            and Lambda functions in AWS. These pipelines partition and deposit clean log data into a S3 Data Lake. 
+                            From there, another Python script run in Lambda creates on-demand EMR clusters to run ETL processes on 
+                            this raw app log data and create a “data lakehouse” that can be used for reporting by combining S3, Glue 
+                            and Athena.</p>
+
+                        <p>The front end of this visualisation uses Tableau to combine user data derived from logs with user data 
+                        	from partner systems to segment and analyse user acquisition, user retention and user activity. Deployed 
+                            to Tableau Server for company-wide access. </p>
                     </div>
 					<div class="fh5co-project-service">
 						<h3>Analytical Concepts</h3>
 						<ul>
-							<li>Actual vs Target Monthly Progress</li>
-							<li>Conversion Rate</li>
-							<li>Segmentation by Lead Source</li>
-                            <li>Lead Time</li>
-                            <li>Sale vs Profit</li>
-                            <li>Individual vs Team vs Company</li>
+							<li>Daily Active Users</li>
+							<li>Weekly Active Users</li>
+							<li>Monthly Active Users</li>
+                            <li>User Segmentation</li>
+                            <li>User Retention</li>
+							<li>User Churn</li>
 						</ul>
                         <p>
             
@@ -143,10 +147,14 @@
                     <div class="fh5co-project-service">
 						<h3>Data Stack</h3>
 						<ul>
-							<li>MySQL</li>
-							<li>Pentaho</li>
-                            <li>SSRS</li>
-                            <li>SSIS</li>
+							<li>Python</li>
+							<li>AWS Lambda</li>
+                            <li>AWS Glue</li>
+                            <li>AWS EMR</li>
+							<li>AWS S3</li>
+                            <li>AWS Athena</li>
+							<li>SQL</li>
+                            <li>Tableau</li>
 						</ul>
 					</div>
 				</div>
@@ -208,7 +216,7 @@
 			<div class="row">
 				<div class="col-md-4 fh5co-widget">
 					<h4>About Michele</h4>
-					<p>Data Evangelist and Consultant. Building data-driven solutions for businesses since 2015. 
+					<p>Data Analyst, Engineer and Consultant. Building data-driven solutions for businesses since 2015. 
 						Passionate about helping clients to plan and implement data strategies to enable their teams 
 						to embrace the data revolution.</p>
 				</div>
@@ -237,7 +245,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2021 Michele Brooks. All Rights Reserved.</small> 
+						<small class="block">&copy; 2022 Michele Brooks. All Rights Reserved.</small> 
 					</p>
 				</div>
 			</div>

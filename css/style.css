@@ -7,9 +7,18 @@
 }
 
 @font-face {
-  font-family: 'kollektif';
-  src: url('/fonts/kollektif/kollektif-webfont.woff2') format('woff2'),
-       url('/fonts/kollektif/kollektif-webfont.woff') format('woff');
+  font-family: 'afrah';
+  src: url('/fonts/afrah/afrah-bold-webfont.woff2') format('woff2'),
+       url('/fonts/afrah/afrah-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'now';
+  src: url('/fonts/now/now-regular-webfont.woff2') format('woff2'),
+       url('/fonts/now/now-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -56,13 +65,13 @@ body {
 }
 
 a {
-  color: #00b7ff;
+  color: #a7d2dd;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #00b7ff;
+  color: #a7d2dd;
   outline: none;
   text-decoration: none;
 }
@@ -73,24 +82,24 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #00b7ff;
+  background: #a7d2dd;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #00b7ff;
+  background: #a7d2dd;
 }
 
 ::selection {
   color: #fff;
-  background: #00b7ff;
+  background: #a7d2dd;
 }
 
 .container-wrap {
@@ -122,15 +131,16 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav #fh5co-logo {
+  min-width: 200px;
   font-size: 24px;
   margin: 0;
   padding: 0;
   text-transform: lowercase;
   font-weight: 500;
-  font-family: "kollektif", Kollektif, sans-serif;
+  font-family: "afrah", afrahbold, sans-serif;
 }
 .fh5co-nav #fh5co-logo a span {
-  color: #00b7ff;
+  color: #a7d2dd;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -146,7 +156,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 5px 0 0 0;
 }
 .fh5co-nav ul li {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -172,7 +182,7 @@ h1, h2, h3, h4, h5, h6, figure {
   content: '';
   width: 58%;
   height: 2px;
-  background: #00b7ff;
+  background: #a7d2dd;
   margin: 0 auto;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -253,7 +263,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a span {
-  background: #00b7ff;
+  background: #a7d2dd;
   padding: 4px 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -397,7 +407,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
   background: transparent;
-  border: 2px solid #00b7ff;
+  border: 2px solid #a7d2dd;
 }
 #fh5co-hero .flexslider .flex-direction-nav {
   display: none;
@@ -413,6 +423,10 @@ h1, h2, h3, h4, h5, h6, figure {
   vertical-align: bottom;
   min-height: 700px;
   padding: 2em;
+  text-align: center;
+}
+.header-btn{
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text > .slider-text-inner {
@@ -423,7 +437,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin-bottom: 20px;
@@ -475,6 +489,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   #fh5co-hero .flexslider .slider-text > .slider-text-inner .btn {
+    width:70%;
+   
+  }
+  .btn-container{
     width: 100%;
   }
 }
@@ -528,13 +546,14 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .services h3 {
   font-size: 13px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
 }
 .services h3 a {
   color: #000;
+  cursor: pointer;
 }
 .services .icon {
   display: table;
@@ -654,10 +673,10 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 30px;
 }
 .progress-bar.progress-bar-default {
-  background: #00b7ff;
+  background: #a7d2dd;
 }
 .progress-bar.progress-bar-success {
-  background: #00b7ff;
+  background: #a7d2dd;
 }
 .progress-bar.progress-bar-info {
   background: #0bbff2;
@@ -686,7 +705,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   font-weight: 400;
   margin-bottom: .3em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
 }
 .fh5co-counters .fh5co-counter-label {
   font-size: 12px;
@@ -694,7 +713,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
   font-weight: 600;
   color: gray;
 }
@@ -771,7 +790,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
 }
 .fh5co-blog .blog-text h3 a {
   color: black;
@@ -870,7 +889,7 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 2px;
   font-weight: 600;
   font-size: 14px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
   color: white;
   border: 1px solid red;
   padding: 10px 15px;
@@ -979,7 +998,7 @@ input[type="text"] {
   margin-bottom: 30px;
 }
 .form-group .btn-modify {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "now", nowregular;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -1023,7 +1042,7 @@ input[type="text"] {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #00b7ff;
+  color: #a7d2dd;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1042,7 +1061,7 @@ input[type="text"] {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: 500;
-  font-family: "kollektif", Kollektif, sans-serif;
+  font-family: "afrah", afrahbold, sans-serif;
   letter-spacing: 1px;
   text-transform: lowercase;
   color: #000;
@@ -1322,17 +1341,18 @@ input[type="text"] {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "now", nowregular;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   -ms-border-radius: 1px;
-  border-radius: 1px;
+  border-radius: 30px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   padding: 8px 20px;
+  text-transform: uppercase;
 }
 .btn.btn-md {
   padding: 8px 20px !important;
@@ -1346,21 +1366,21 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #00b7ff;
+  background: #a7d2dd;
   color: #fff;
-  border: 2px solid #00b7ff;
+  border: 2px solid #a7d2dd;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #c0a9e2 !important;
-  border-color: #c0a9e2 !important;
+  background: #e7e0c8 !important;
+  border-color: #e7e0c8 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #00b7ff;
-  border: 2px solid #00b7ff;
+  color: #a7d2dd;
+  border: 2px solid #a7d2dd;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #00b7ff;
+  background: #a7d2dd;
   color: #fff;
 }
 
@@ -1490,7 +1510,7 @@ input[type="text"] {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #00b7ff;
+  border-color: #a7d2dd;
 }
 
 .row-pb-md {
@@ -1635,13 +1655,13 @@ input[type="text"] {
 }
 @media (min-width: 481px) {
   .sliderBG {
-    background-image: url(/images/img-cover-1.png);
+    background-image: url(/images/header1-home.png)
   
   }
 }
 @media (max-width: 480px) { 
   .sliderBG {
-    background-image: url(/images/mob-img-cover-1.png);
+    background-image: url(/images/mobile-header1-home.png);
     background-size: 100%!important; 
     background-position: unset!important;
     

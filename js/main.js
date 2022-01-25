@@ -251,16 +251,12 @@
 			$('.grid').isotope({ filter: '*' })
 		 })
 
-		 $('.tableau').click(function(){
-			$('.grid').isotope({ filter: '.tableau' })
+		 $('.aws').click(function(){
+			$('.grid').isotope({ filter: '.aws' })
 		 })
 
-		 $('.powerbi').click(function(){
-			$('.grid').isotope({ filter: '.powerbi' })
-		 })
-
-		 $('.ssrs').click(function(){
-			$('.grid').isotope({ filter: '.ssrs' })
+		 $('.datastudio').click(function(){
+			$('.grid').isotope({ filter: '.datastudio' })
 		 })
 
 		 $('.gis').click(function(){
@@ -271,13 +267,21 @@
 			$('.grid').isotope({ filter: '.python' })
 		 })
 
-		 $('.aws').click(function(){
-			$('.grid').isotope({ filter: '.aws' })
+		 $('.powerbi').click(function(){
+			$('.grid').isotope({ filter: '.powerbi' })
+		 })
+
+		 $('.ssrs').click(function(){
+			$('.grid').isotope({ filter: '.ssrs' })
 		 })
 
 		 $('.ssis').click(function(){
 			$('.grid').isotope({ filter: '.ssis' })
 		 })
+
+		 $('.tableau').click(function(){
+			$('.grid').isotope({ filter: '.tableau' })
+		 }) 
 
 	}
 
